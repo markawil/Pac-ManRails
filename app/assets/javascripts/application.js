@@ -6,7 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= require bootstrap
 //= require html5slider
 //= require pacman
 

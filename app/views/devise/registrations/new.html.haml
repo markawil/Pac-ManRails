@@ -1,0 +1,22 @@
+.row
+  .span4
+    &nbsp;
+  .span4.well
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+      = devise_error_messages!
+      %fieldset
+        %legend Sign Up
+        .control-group
+          = f.label :email
+          .controls
+            = f.email_field :email
+        .control-group
+          = f.label :password
+          .controls
+            = f.password_field :password
+        .control-group
+          = f.label :password_confirmation
+          .controls
+            = f.password_field :password_confirmation
+        .form-actions
+          = f.submit "Sign up", :class => "btn btn-primary"
